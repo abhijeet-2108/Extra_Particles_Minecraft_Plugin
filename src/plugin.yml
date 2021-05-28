@@ -1,0 +1,8 @@
+name: Extra_Particles
+main: me.arr0w.main.Main
+version: 1.0
+author: Arr0w
+api-version: 1.16
+commands:
+  particles:
+    usage: /<command>
