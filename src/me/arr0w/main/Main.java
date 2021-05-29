@@ -3,6 +3,7 @@ package me.arr0w.main;
 import me.arr0w.commands.Trail;
 import me.arr0w.events.ClickEvent;
 import me.arr0w.events.Movement;
+import me.arr0w.events.Quit;
 import me.arr0w.models.GUI;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
@@ -15,8 +16,11 @@ public class Main extends JavaPlugin {
         menu.register();
 
         PluginManager pm = this.getServer().getPluginManager();
+
         pm.registerEvents(new ClickEvent(),this);
         pm.registerEvents(new Movement(), this);
+        pm.registerEvents(new Quit(), this);
+
 
         this.getCommand("particles").setExecutor(new Trail());
     }

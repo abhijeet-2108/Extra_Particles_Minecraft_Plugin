@@ -27,6 +27,11 @@ public class GUI {
         item.setItemMeta(meta);
         inv.setItem(5,item);
 
+        item= new ItemStack(Material.RED_CONCRETE);
+        meta= item.getItemMeta();
+        meta.setDisplayName(ChatColor.GREEN+"Close");
+        item.setItemMeta(meta);
+        inv.setItem(8,item);
         setInvetory(inv);
     }
     public Inventory getInventory(){

@@ -28,7 +28,7 @@ public class ClickEvent implements Listener {
         ParticleData particle = new ParticleData(player.getUniqueId());
 
         if(particle.hasID()){
-            particle.endTASk();
+            particle.endTask();
             particle.removeID();
         }
 

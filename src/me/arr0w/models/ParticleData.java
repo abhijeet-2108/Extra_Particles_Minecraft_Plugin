@@ -35,7 +35,7 @@ public class ParticleData {
         TRAILS.remove(uuid);
     }
 
-    public void endTASk(){
+    public void endTask(){
         if (getID()==1)
             return;
         Bukkit.getScheduler().cancelTask(getID());
